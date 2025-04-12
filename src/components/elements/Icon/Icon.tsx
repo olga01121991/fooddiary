@@ -8,7 +8,7 @@ interface IIconProps { //интерфейс
     size?: number; //размер шрифта, язательный параметр, по умолчанию 16
 } 
 
-const Icon: FC<IIconProps> = (props) => {
+const Icon: FC<IIconProps> = (props) => { //функциональный компонент
     const { iconType, size = 16 } = props;
 
     return (        
