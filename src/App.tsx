@@ -5,6 +5,7 @@ import './App.scss';
 import "./scss/index.scss";
 import "./assets/fonts/icomoon/style.scss";
 import Icon from './components/elements/Icon/Icon';
+import Button from './components/elements/Icon/Button/Button';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <div>
         <Icon iconType="ArrowsLeftRight" size={54}/>
         <Icon iconType="ArrowsLeftRight" />
+        <Button />
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
