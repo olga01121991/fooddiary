@@ -5,7 +5,9 @@ import './App.scss';
 import "./scss/index.scss";
 import "./assets/fonts/icomoon/style.scss";
 import Icon from './components/elements/Icon/Icon';
-import Button from './components/elements/Icon/Button/Button';
+import Button from './components/elements/Button/Button';
+import Badge from './components/elements/Badge/BaseBadge/BaseBadge';
+import RoundedBadge from './components/elements/Badge/RoundedBadge/RoundedBadge';
 
 
 function App() {
@@ -17,6 +19,9 @@ function App() {
         <Icon iconType="ArrowsLeftRight" size={54}/>
         <Icon iconType="ArrowsLeftRight" />
         <Button />
+        <Badge text="Completed" color="red"/>
+        <RoundedBadge text="любой" />
+        <RoundedBadge text="любой" bg="bg_green_light" />
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>

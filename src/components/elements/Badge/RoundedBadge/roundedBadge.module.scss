@@ -1,0 +1,8 @@
+@use "../../../../scss/mixins" as *;
+
+.badge {
+    @include center; //mixin
+    font-size: 11px;
+    padding: 6px 10px;
+    border-radius: 50px;
+}
