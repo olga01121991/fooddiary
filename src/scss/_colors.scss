@@ -1,0 +1,40 @@
+@use "./variables" as *;
+
+
+$colors: ( //переменна $
+    "green": $Green,
+    "green_light": $Green-Light,
+    "saffron": $Saffron,
+    "saffron_light": $Saffron-Light,
+    "orange": $Orange,
+    "orange_20": $Orange-20,
+    "orange_10": $Orange-10,
+    "orange_subtle": $Orange-Subtle,
+    "black": $Black,
+    "pure_white": $Pure-White,
+    "blue": $Blue,
+    "pink": $Pink,
+    "gray_30": $Gray-30,
+    "gray_20": $Gray-20,
+    "gray_10": $Gray-10,
+    "gray_line": $Gray-Line,
+    "gray_bg": $Gray-BG,
+    "blue_00": $Blue-00,
+    "blue_10": $Blue-10,
+    "blue_20": $Blue-20,
+    "blue_subtle": $Blue-Subtle,
+    "red": $Red,
+    "red_light": $Red-Light,
+    "red_subtle": $Red-Subtle,
+    "red_subtle1": $Red-Subtle1,
+);
+
+@each $title, $color in $colors { //пробегаемс по массиву colors и берём значение
+    .color_#{$title} {
+        color: $color;
+    }
+    .bg_#{$title} {
+        background-color: $color;
+    }
+}
+
