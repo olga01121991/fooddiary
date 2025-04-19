@@ -1,4 +1,4 @@
-@mixin center {
+@mixin center { // mixin  - это повторяющиеся участки кода, которые можно включать в селекторы
     display: flex;
     align-items: center;
     justify-content: center;

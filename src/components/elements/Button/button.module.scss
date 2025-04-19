@@ -1,0 +1,71 @@
+@use "../../../scss/mixins" as *;
+@use "../../../scss/variables" as *;
+
+
+.button {
+  @include center; //mixin
+  box-sizing: border-box;
+  outline: none;
+
+
+  &:hover, &:active, &:focus {
+    outline: none;
+    border: none;
+    
+  }
+
+  &_small {
+    font-size: 11px;
+    border-radius: 8px;
+    padding: 6px 12px;
+  }
+
+  &_medium {
+    font-size: 12px;
+    border-radius: 10px;
+    padding: 8px 14px;
+  }
+
+  &_large {
+    font-size: 14px;
+    border-radius: 12px;
+    padding: 10px 16px;
+  }
+
+  &_primary { 
+    background-color: $Green; 
+    border-color: $Green;
+    color: $Black;
+    &:hover {
+      border-color: $Green;
+    }
+  }
+
+  &_secondary {
+    background-color: $Gray-BG;
+    border-color: $Gray-BG;
+    color: $Gray-30;
+    &:hover {
+      border-color: $Gray-BG;
+    }
+  }
+
+  &_ghost {
+    color: $Gray-30;
+    border-color: $Gray-Line;
+    background-color: $White;
+    &:hover {
+      border-color: $Gray-Line;
+    }
+  }
+
+  &_transparent {
+    color: $Gray-30;
+    border: none;
+    background-color: transparent;
+    border-color: transparent;
+    &:hover {
+      border-color: transparent;
+    }
+  }
+}

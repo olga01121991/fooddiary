@@ -8,7 +8,7 @@ const RoundedBadge: FC<IBaseBadge> = (props) => {
 
     return (
         <div 
-          className={classNames(stl.badge, bg)}
+          className={classNames(stl.badge, bg)} //зачем здесь bg?
         >
           {text}
         </div>

@@ -18,10 +18,17 @@ function App() {
       <div>
         <Icon iconType="ArrowsLeftRight" size={54}/>
         <Icon iconType="ArrowsLeftRight" />
-        <Button />
         <Badge text="Completed" color="red"/>
         <RoundedBadge text="любой" />
         <RoundedBadge text="любой" bg="bg_green_light" />
+
+        <Button size='small' text='кнопка' btnType='primary'/>
+        <Button size='medium' text='кнопка' btnType='primary'/>
+        <Button size='large' text='кнопка' btnType='primary'/>
+        <Button size='small' text='кнопка' btnType='secondary'/>
+        <Button size='small' text='кнопка' btnType='ghost'/>
+        <Button size='small' text='кнопка' btnType='transparent'/>
+        
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
