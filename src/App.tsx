@@ -24,7 +24,13 @@ function App() {
 
         <Button size='small' text='кнопка' btnType='primary'/>
         <Button size='medium' text='кнопка' btnType='primary'/>
-        <Button size='large' text='кнопка' btnType='primary'/>
+        <Button 
+          size='large' 
+          text='кнопка' 
+          btnType='primary'
+          prefixIcon={<Icon iconType="CalendarBlank" size={13}/>}
+          postfixIcon={<Icon iconType="CaretDown" size={13}/>}
+        />
         <Button size='small' text='кнопка' btnType='secondary'/>
         <Button size='small' text='кнопка' btnType='ghost'/>
         <Button size='small' text='кнопка' btnType='transparent'/>
