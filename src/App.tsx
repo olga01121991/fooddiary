@@ -8,6 +8,7 @@ import Icon from './components/elements/Icon/Icon';
 import Button from './components/elements/Button/Button';
 import Badge from './components/elements/Badge/BaseBadge/BaseBadge';
 import RoundedBadge from './components/elements/Badge/RoundedBadge/RoundedBadge';
+import CheckboxBadge from './components/elements/Badge/CheckboxBadge/CheckboxBadge';
 
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
         <Button size='medium' text='кнопка' btnType='primary'/>
         <Button 
           size='large' 
-          text='кнопка' 
+          text='Кнопка' 
           btnType='primary'
           prefixIcon={<Icon iconType="CalendarBlank" size={13}/>}
           postfixIcon={<Icon iconType="CaretDown" size={13}/>}
@@ -34,7 +35,8 @@ function App() {
         <Button size='small' text='кнопка' btnType='secondary'/>
         <Button size='small' text='кнопка' btnType='ghost'/>
         <Button size='small' text='кнопка' btnType='transparent'/>
-        
+        <CheckboxBadge />
+
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>

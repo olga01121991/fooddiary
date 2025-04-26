@@ -6,7 +6,8 @@
   @include center; //mixin
   box-sizing: border-box;
   outline: none;
-
+  display: flex;
+  gap: 4px;
 
   &:hover, &:active, &:focus {
     outline: none;
