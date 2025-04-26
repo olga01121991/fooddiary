@@ -12,7 +12,9 @@ import CheckboxBadge from './components/elements/Badge/CheckboxBadge/CheckboxBad
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+
+  const [isCheck, setIsCheck] = useState<boolean>(true);
 
   return (
     <>
@@ -35,14 +37,8 @@ function App() {
         <Button size='small' text='кнопка' btnType='secondary'/>
         <Button size='small' text='кнопка' btnType='ghost'/>
         <Button size='small' text='кнопка' btnType='transparent'/>
-        <CheckboxBadge />
+        <CheckboxBadge text='Сделано' isCheck={isCheck} setIsCheck={setIsCheck}/>
 
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
       </div>
       <h1>Vite + React</h1>
       <div className="card">

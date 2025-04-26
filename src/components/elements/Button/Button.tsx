@@ -12,7 +12,14 @@ interface IButton extends HTMLAttributes<HTMLButtonElement>{ // из HTMLAttribu
 }
 
 const Button: FC<IButton> = (props) => {
-  const { text, size, btnType, prefixIcon, postfixIcon, ...btnProps } = props; // ...btnProps - все доступные параметры кнопки из HTMLAttributes
+  const { 
+    text, 
+    size, 
+    btnType, 
+    prefixIcon, 
+    postfixIcon, 
+    ...btnProps 
+  } = props; // ...btnProps - все доступные параметры кнопки из HTMLAttributes
   return (
     <button
       className={cn(

@@ -1,33 +1,36 @@
-import { FC, useState } from "react";
+import { FC } from "react";
 import cn from "classnames";
 import stl from "./checkboxBadge.module.scss";
+import { IBaseBadge } from "../interface";
 
 
-interface ICheckboxBadge {
-  text: string;
-  // checked: boolean;
-  bg?: 'isDone' | 'notIsDone'; //цвет фона зависит от состояния isChecked, как это указать 
+interface ICheckboxBadge extends IBaseBadge {
+  isCheck: boolean;
+  setIsCheck: (value: boolean) => void;
 }
-// и нужен ли вообще интерфейс? ведь по сути здесь только текст и выполнено/не выполнено
 
 const CheckboxBadge: FC<ICheckboxBadge> = (props) => {
-  const { text } = props;
-  const [isChecked, setIsChecked] = useState(false);
+  const { 
+    text, 
+    bg, 
+    isCheck, 
+    setIsCheck,
+  } = props;
 
   return (
     <div
       className={cn(
         stl.checkbox,
-        // stl[`checkbox${checked}`],
+        bg,
       )}
+      onClick={() => {setIsCheck(!isCheck)}}
     >
       <input 
         type="checkbox"
-        checked={isChecked}
-        onChange={(event) => setIsChecked(event.target.checked)}
-      >
-        {text}
-      </input>
+        checked={isCheck}
+        onChange={(event) => setIsCheck(event.target.checked)}
+      />
+      {text}
     </div>
   )
 }
