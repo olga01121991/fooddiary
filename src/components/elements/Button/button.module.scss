@@ -9,11 +9,6 @@
   display: flex;
   gap: 4px;
 
-  &:hover, &:active, &:focus {
-    outline: none;
-    border: none;
-    
-  }
 
   &_small {
     font-size: 11px;
@@ -37,27 +32,18 @@
     background-color: $Green; 
     border-color: $Green;
     color: $Black;
-    &:hover {
-      border-color: $Green;
-    }
   }
 
   &_secondary {
     background-color: $Gray-BG;
     border-color: $Gray-BG;
     color: $Gray-30;
-    &:hover {
-      border-color: $Gray-BG;
-    }
   }
 
   &_ghost {
     color: $Gray-30;
     border-color: $Gray-Line;
     background-color: $White;
-    &:hover {
-      border-color: $Gray-Line;
-    }
   }
 
   &_transparent {
@@ -65,8 +51,5 @@
     border: none;
     background-color: transparent;
     border-color: transparent;
-    &:hover {
-      border-color: transparent;
-    }
   }
 }
