@@ -7,6 +7,10 @@
     font-size: 11px;
     padding: 6px 12px 6px 6px;
     border-radius: 8px;
+    width: max-content;
+    display: flex;
+    gap: 4px;
+    cursor: pointer;
 }
 
 input {

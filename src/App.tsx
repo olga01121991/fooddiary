@@ -37,7 +37,7 @@ function App() {
         <Button size='small' text='кнопка' btnType='secondary'/>
         <Button size='small' text='кнопка' btnType='ghost'/>
         <Button size='small' text='кнопка' btnType='transparent'/>
-        <CheckboxBadge text='Сделано' isCheck={isCheck} setIsCheck={setIsCheck}/>
+        <CheckboxBadge text='Сделано' isCheck={isCheck} setIsCheck={setIsCheck} bg="bg_orange_subtle" />
 
       </div>
       <h1>Vite + React</h1>
