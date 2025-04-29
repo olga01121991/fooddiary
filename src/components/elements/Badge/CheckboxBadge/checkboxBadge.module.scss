@@ -1,0 +1,20 @@
+@use "../../../../scss/mixins" as *;
+@use "../../../../scss/variables" as *;
+
+
+.checkbox {
+    @include center; //mixin
+    font-size: 11px;
+    padding: 6px 12px 6px 6px;
+    border-radius: 8px;
+    width: max-content;
+    display: flex;
+    gap: 4px;
+    cursor: pointer;
+}
+
+input {
+    accent-color: $Green;
+    width: 16px;
+    height: 16px;
+}

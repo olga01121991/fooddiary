@@ -8,11 +8,11 @@ const BaseBadge: FC<IBaseBadge> = (props) => {
   const { text, bg } = props;
 
   return (
-      <div 
-        className={classNames(stl.badge, bg)}
-      >
-        {text}
-      </div>
+    <div 
+      className={classNames(stl.badge, bg)}
+    >
+      {text}
+    </div>
   )
 }
 
