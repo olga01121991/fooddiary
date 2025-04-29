@@ -6,9 +6,9 @@
   @include center; //mixin
   box-sizing: border-box;
   outline: none;
+  cursor: pointer;
   display: flex;
   gap: 4px;
-
 
   &_small {
     font-size: 11px;
@@ -30,19 +30,19 @@
 
   &_primary { 
     background-color: $Green; 
-    border-color: $Green;
     color: $Black;
+    border: none;
   }
 
   &_secondary {
     background-color: $Gray-BG;
-    border-color: $Gray-BG;
     color: $Gray-30;
+    border: none;
   }
 
   &_ghost {
     color: $Gray-30;
-    border-color: $Gray-Line;
+    border: 1px solid $Gray-Line;
     background-color: $White;
   }
 
@@ -50,6 +50,5 @@
     color: $Gray-30;
     border: none;
     background-color: transparent;
-    border-color: transparent;
   }
 }
