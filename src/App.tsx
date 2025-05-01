@@ -8,6 +8,20 @@ import Icon from './components/elements/Icon/Icon';
 import Button from './components/elements/Button/Button';
 import Badge from './components/elements/Badge/BaseBadge/BaseBadge';
 import RoundedBadge from './components/elements/Badge/RoundedBadge/RoundedBadge';
+import Breadcrumb, { ILink } from './components/elements/Breadcrumb/Breadcrumb';
+
+const links: ILink[] = [
+  {
+    id: 0,
+    title: "Ссылка 1",
+    url: "google.com"
+  },
+  {
+    id: 1,
+    title: "Ссылка 2",
+    url: "google.com"
+  },
+]
 
 
 function App() {
@@ -35,12 +49,8 @@ function App() {
         <Button size='small' text='кнопка' btnType='ghost'/>
         <Button size='small' text='кнопка' btnType='transparent'/>
         
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <Breadcrumb links={links} title='нажать'/>
+
       </div>
       <h1>Vite + React</h1>
       <div className="card">
