@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
 import './App.scss';
 import "./scss/index.scss";
 import "./assets/fonts/icomoon/style.scss";
@@ -9,6 +7,7 @@ import Button from './components/elements/Button/Button';
 import Badge from './components/elements/Badge/BaseBadge/BaseBadge';
 import RoundedBadge from './components/elements/Badge/RoundedBadge/RoundedBadge';
 import Breadcrumb, { ILink } from './components/elements/Breadcrumb/Breadcrumb';
+import ChartBar from './components/elements/ChartBar/ChartBar';
 
 const links: ILink[] = [
   {
@@ -36,6 +35,7 @@ function App() {
         <RoundedBadge text="любой" />
         <RoundedBadge text="любой" bg="bg_green_light" />
 
+        <ChartBar activCount={5}/>
         <Button size='small' text='кнопка' btnType='primary'/>
         <Button size='medium' text='кнопка' btnType='primary'/>
         <Button 

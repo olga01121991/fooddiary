@@ -1,0 +1,15 @@
+@use "../../../scss/mixins" as *;
+@use "../../../scss/variables" as *;
+
+.wrapper {
+  @include center; //mixin
+  display: flex;
+  gap: 4px;
+}
+
+.chatBar {
+  width: 8px;
+  height: 18px;
+  border-radius: 4px;
+  background-color: $Orange;
+}
