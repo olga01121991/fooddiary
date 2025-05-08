@@ -14,7 +14,23 @@
 }
 
 input {
-    accent-color: $Green;
+    position: relative;
     width: 16px;
     height: 16px;
+    border: 1px solid $Gray-Line;
+    border-radius: 4px;
+    background: $White;
+    appearance: none;
+    cursor: pointer;
 }
+
+input:checked:after {
+    font-family: "icomoon";
+    content: "\e912";
+    position: absolute;
+    background: $Green;
+    border: 1px solid $Green;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
