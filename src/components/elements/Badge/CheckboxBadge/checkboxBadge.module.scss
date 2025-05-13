@@ -17,20 +17,24 @@ input {
     position: relative;
     width: 16px;
     height: 16px;
-    border: 1px solid $Gray-Line;
     border-radius: 4px;
-    background: $White;
+    background: #FFFFFF;
     appearance: none;
     cursor: pointer;
+    outline: 1px solid #E1E1E2;
+    outline-offset: 0px;
 }
 
 input:checked:after {
     font-family: "icomoon";
     content: "\e912";
     position: absolute;
-    background: $Green;
-    border: 1px solid $Green;
+    background: #C2E66E;
+    border: 1px solid #C2E66E;
     border-radius: 4px;
     overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 14px;
+    height: 14px;
 }
-
