@@ -8,8 +8,8 @@ import Badge from './components/elements/Badge/BaseBadge/BaseBadge';
 import RoundedBadge from './components/elements/Badge/RoundedBadge/RoundedBadge';
 import CheckboxBadge from './components/elements/Badge/CheckboxBadge/CheckboxBadge';
 import Breadcrumb, { ILink } from './components/elements/Breadcrumb/Breadcrumb';
-import ChartBar from './components/elements/ChartBar/ChartBar';
 import SegmentButton, { ISegment } from './components/elements/SegmentButton/SegmentButton';
+import ChartBarWithText from './components/elements/ChartBar/ChartBarWithText';
 
 const links: ILink[] = [
   {
@@ -66,8 +66,9 @@ function App() {
         <Badge text="Completed" color="red"/>
         <RoundedBadge text="любой" />
         <RoundedBadge text="любой" bg="bg_green_light" />
-
-        <ChartBar activCount={5} title='Сделано'/>
+        <div style={{backgroundColor: 'gray'}}>
+          <ChartBarWithText activCount={5} title='Сделано'/>
+        </div>
         <Button size='small' text='кнопка' btnType='primary'/>
         <Button size='medium' text='кнопка' btnType='primary'/>
         <Button 
