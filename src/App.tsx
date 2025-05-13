@@ -8,6 +8,7 @@ import Icon from './components/elements/Icon/Icon';
 import Button from './components/elements/Button/Button';
 import Badge from './components/elements/Badge/BaseBadge/BaseBadge';
 import RoundedBadge from './components/elements/Badge/RoundedBadge/RoundedBadge';
+import CheckboxBadge from './components/elements/Badge/CheckboxBadge/CheckboxBadge';
 import Breadcrumb, { ILink } from './components/elements/Breadcrumb/Breadcrumb';
 
 const links: ILink[] = [
@@ -25,7 +26,9 @@ const links: ILink[] = [
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+
+  const [isCheck, setIsCheck] = useState<boolean>(true);
 
   return (
     <>
@@ -40,7 +43,7 @@ function App() {
         <Button size='medium' text='кнопка' btnType='primary'/>
         <Button 
           size='large' 
-          text='кнопка' 
+          text='Кнопка' 
           btnType='primary'
           prefixIcon={<Icon iconType="CalendarBlank" size={13}/>}
           postfixIcon={<Icon iconType="CaretDown" size={13}/>}
@@ -48,6 +51,8 @@ function App() {
         <Button size='small' text='кнопка' btnType='secondary'/>
         <Button size='small' text='кнопка' btnType='ghost'/>
         <Button size='small' text='кнопка' btnType='transparent'/>
+        <CheckboxBadge text='Сделано' isCheck={isCheck} setIsCheck={setIsCheck} bg="bg_orange_subtle" />
+
         
         <Breadcrumb links={links} title='нажать'/>
 
