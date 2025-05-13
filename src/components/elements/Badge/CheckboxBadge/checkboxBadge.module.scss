@@ -1,0 +1,40 @@
+@use "../../../../scss/mixins" as *;
+@use "../../../../scss/variables" as *;
+
+
+.checkbox {
+    @include center; //mixin
+    font-size: 11px;
+    padding: 6px 12px 6px 6px;
+    border-radius: 8px;
+    width: max-content;
+    display: flex;
+    gap: 4px;
+    cursor: pointer;
+}
+
+input {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    background: #FFFFFF;
+    appearance: none;
+    cursor: pointer;
+    outline: 1px solid #E1E1E2;
+    outline-offset: 0px;
+}
+
+input:checked:after {
+    font-family: "icomoon";
+    content: "\e912";
+    position: absolute;
+    background: #C2E66E;
+    border: 1px solid #C2E66E;
+    border-radius: 4px;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 14px;
+    height: 14px;
+}
