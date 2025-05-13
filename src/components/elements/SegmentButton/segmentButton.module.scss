@@ -1,0 +1,32 @@
+@use "../../../scss/mixins" as *;
+@use "../../../scss/variables" as *;
+
+.wrapper {
+  @include center; //mixin
+  height: 30px;
+  width: 313px;
+  background-color: $Gray-BG;
+  display: flex;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.segment {
+  @include center;
+  flex-grow: 1;
+  height: 30px;
+  font-size: 11px;
+  border-radius: 10px;
+  background-color: $Green;
+  color: $Black
+}
+
+.passiv {
+  @include center;
+  flex-grow: 1;
+  height: 30px;
+  font-size: 11px;
+  border-radius: 10px;
+  background-color: $Gray-BG;
+  color: $Gray-30;
+}

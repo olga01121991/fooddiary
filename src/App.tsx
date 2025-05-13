@@ -10,6 +10,7 @@ import Badge from './components/elements/Badge/BaseBadge/BaseBadge';
 import RoundedBadge from './components/elements/Badge/RoundedBadge/RoundedBadge';
 import CheckboxBadge from './components/elements/Badge/CheckboxBadge/CheckboxBadge';
 import Breadcrumb, { ILink } from './components/elements/Breadcrumb/Breadcrumb';
+import SegmentButton, { ISegment } from './components/elements/SegmentButton/SegmentButton';
 
 const links: ILink[] = [
   {
@@ -24,8 +25,36 @@ const links: ILink[] = [
   },
 ]
 
+const segments: ISegment[] = [
+  {
+    id: 0,
+    title: "Ссылка 1",
+  },
+  {
+    id: 1,
+    title: "Ссылка 2",
+  },
+]
+
+const segments2: ISegment[] = [
+  {
+    id: 2,
+    title: "Ссылка 1",
+  },
+  {
+    id: 3,
+    title: "Ссылка 2",
+  },
+  {
+    id: 4,
+    title: "Ссылка 3",
+  },
+]
+
 
 function App() {
+
+  const [activeIndex, setActiveIndex] = useState<number>(0)
   const [count, setCount] = useState(0);
 
   const [isCheck, setIsCheck] = useState<boolean>(true);
@@ -55,6 +84,17 @@ function App() {
 
         
         <Breadcrumb links={links} title='нажать'/>
+        <SegmentButton 
+          segments={segments} 
+          // onClick={(index: number) => {setActiveIndex(index)}} 
+          onClick={setActiveIndex} 
+          activeIndex={activeIndex}
+        />
+        <SegmentButton 
+          segments={segments2} 
+          onClick={setActiveIndex} 
+          activeIndex={activeIndex}
+        />
 
       </div>
       <h1>Vite + React</h1>
