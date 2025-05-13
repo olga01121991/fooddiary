@@ -35,7 +35,7 @@ function App() {
         <RoundedBadge text="любой" />
         <RoundedBadge text="любой" bg="bg_green_light" />
 
-        <ChartBar activCount={5}/>
+        <ChartBar activCount={5} title='Сделано'/>
         <Button size='small' text='кнопка' btnType='primary'/>
         <Button size='medium' text='кнопка' btnType='primary'/>
         <Button 

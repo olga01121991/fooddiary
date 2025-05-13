@@ -1,26 +1,34 @@
 import { FC } from 'react'
-import cn from "classnames";
-import stl from "./chatBar.module.scss";
+import stl from "./chartBar.module.scss";
 
 interface IChartBar {
+  title: string;
   allCount?: number;
   activCount: number;
 }
 
 const ChartBar: FC<IChartBar> = (props) => {
-  const { allCount = 10, activCount } = props;
+  const { allCount = 10, activCount, title } = props;
   const arr = new Array(allCount).fill(1).map((_value, index) => index)
-  console.log(arr)
+
   return (
-    <div className={cn(stl.wrapper)}>
-      {
-        arr.map((val) => (
-          <div
-            className={cn(stl.chatBar)}
-            key={val}
-          />
-        ))
-      }
+    <div className={stl.wrapper}>
+      {title}
+      <div className={stl.count}>
+        <div className={stl.activCount}>{activCount}</div>
+        /{allCount}
+      </div>
+      <div className={stl.chart}>
+        {
+          arr.map((val, index) => (
+            <div
+              className={index < activCount ? stl.chartBarActiv  : stl.chartBar}
+              key={val}
+            />
+          ))
+        }
+      </div>
+      
     </div>
   )
 }

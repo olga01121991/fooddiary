@@ -1,0 +1,41 @@
+@use "../../../scss/mixins" as *;
+@use "../../../scss/variables" as *;
+
+.wrapper {
+  @include center; //mixin
+  display: flex;
+  gap: 6px;
+  background-color: $Gray-BG;
+  font-size: 12px;
+  color: $Gray-20;
+}
+
+.count {
+  @include center;
+  display: flex;
+}
+
+.activCount {
+  font-size: 14px;
+  color: $Gray-30;
+  font-weight: bold
+}
+
+.chart {
+  display: flex;
+  gap: 4px;
+}
+
+.chartBarActiv {
+  width: 8px;
+  height: 18px;
+  border-radius: 4px;
+  background-color: $Orange;
+}
+
+.chartBar {
+  width: 8px;
+  height: 18px;
+  border-radius: 4px;
+  background-color: $White;
+}
