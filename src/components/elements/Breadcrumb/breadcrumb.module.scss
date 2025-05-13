@@ -1,0 +1,19 @@
+@use "../../../scss/mixins" as *;
+@use "../../../scss/variables" as *;
+
+.breadcrumb {
+    @include center; //mixin
+    font-size: 12px;
+    color: $Gray-30;
+    display: flex;
+    gap: 4px;
+}
+
+a {
+  color: $Gray-30;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $Black;
+}
