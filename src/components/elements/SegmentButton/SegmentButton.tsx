@@ -1,4 +1,5 @@
 import { FC } from 'react'
+import stl from "./segmentButton.module.scss";
 
 export interface ISegment {
   id: number;
@@ -15,11 +16,11 @@ const SegmentButton: FC<ISegmentButton> = (props) => {
   const { segments, onClick, activeIndex } = props;
 
   return (
-    <div className='wrapper'>
+    <div className={stl.wrapper}>
       {
         segments.map((segment, index) => (
           <div 
-            style={{background: activeIndex === index ? "red"  : "none"}}
+            className={activeIndex === index ? stl.segment  : stl.passiv}
             onClick={() => {onClick(index)}}
             key={segment.id}
           >

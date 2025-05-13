@@ -35,6 +35,21 @@ const segments: ISegment[] = [
   },
 ]
 
+const segments2: ISegment[] = [
+  {
+    id: 2,
+    title: "Ссылка 1",
+  },
+  {
+    id: 3,
+    title: "Ссылка 2",
+  },
+  {
+    id: 4,
+    title: "Ссылка 3",
+  },
+]
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -66,6 +81,11 @@ function App() {
         <SegmentButton 
           segments={segments} 
           // onClick={(index: number) => {setActiveIndex(index)}} 
+          onClick={setActiveIndex} 
+          activeIndex={activeIndex}
+        />
+        <SegmentButton 
+          segments={segments2} 
           onClick={setActiveIndex} 
           activeIndex={activeIndex}
         />
