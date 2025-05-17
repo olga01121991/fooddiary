@@ -1,0 +1,67 @@
+@use "../../../scss/mixins" as *;
+@use "../../../scss/variables" as *;
+
+.wrapper {
+  @include center;
+  flex-direction: column;
+  position: relative;
+  background-color: aqua
+}
+
+.dropbtn {
+  @include center;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  gap: 12px;
+  font-size: 14px;
+  border-radius: 14px;
+  padding: 10px 8px 10px 16px;
+  background-color: $Green; 
+  color: $Black;
+  border: none;
+}
+
+.graybtn {
+  @include center;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  gap: 12px;
+  font-size: 14px;
+  border-radius: 14px;
+  padding: 10px 8px 10px 16px;
+  background-color: $Cream-BG; 
+  color: $Gray-30;
+  border: none;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  cursor: pointer;
+  font-size: 14px;
+  flex-grow: 1;
+  // width: 100%;
+  position: absolute;
+  top: 40px;
+}
+
+.drop {
+  background-color: $Green; 
+  color: $Black;
+  border: none;
+  border-radius: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.passiv {
+  background-color: $Cream-BG; 
+  color: $Gray-30;
+  border: none;
+  border-radius: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

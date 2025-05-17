@@ -10,6 +10,7 @@ import CheckboxBadge from './components/elements/Badge/CheckboxBadge/CheckboxBad
 import Breadcrumb, { ILink } from './components/elements/Breadcrumb/Breadcrumb';
 import SegmentButton, { ISegment } from './components/elements/SegmentButton/SegmentButton';
 import ChartBarWithText from './components/elements/ChartBar/ChartBarWithText';
+import Dropdown, { IDrop } from './components/elements/Dropdown/Dropdown';
 
 const links: ILink[] = [
   {
@@ -50,10 +51,22 @@ const segments2: ISegment[] = [
   },
 ]
 
+const drop: IDrop[] = [
+  {
+    id: 0,
+    title: "Ссылка 1",
+  },
+  {
+    id: 1,
+    title: "Ссылка 2",
+  },
+]
 
 function App() {
 
   const [activeIndex, setActiveIndex] = useState<number>(0)
+  const [activeDrop, setActiveDrop] = useState<number>(0)
+  
   const [count, setCount] = useState(0);
 
   const [isCheck, setIsCheck] = useState<boolean>(true);
@@ -95,6 +108,12 @@ function App() {
           segments={segments2} 
           onClick={setActiveIndex} 
           activeIndex={activeIndex}
+        />
+        <Dropdown 
+          title='ВЫбрать' 
+          drop={drop}
+          onClick={setActiveDrop}
+          activeDrop={activeDrop}
         />
 
       </div>
