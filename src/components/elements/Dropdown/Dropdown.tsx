@@ -40,7 +40,7 @@ const Dropdown: FC<IDropdown> = (props) => {
     };
   }, [showDrop]); // Эффект зависит от состояния showDrop
 
-  const HandleClick = (val: IDrop) => {
+  const handleClick = (val: IDrop) => {
     setShowDrop(false)
     onClick(val)
   }
@@ -54,14 +54,15 @@ const Dropdown: FC<IDropdown> = (props) => {
       ref={dropdownRef}
     >
       {/* Кнопка для открытия/закрытия dropdown */}
-      <button
+      <div
         className={showDrop === true ? stl.graybtn : stl.dropbtn}
         onClick={() => setShowDrop(!showDrop)}
       >
         <Icon iconType='SquaresFour' size={20}/>
         {!!activeDrop ? activeDrop.title : title}
-        {showDrop === true ? <Icon iconType='CaretUp'/> : <Icon iconType='CaretDown'/>} 
-      </button>
+        {/* {showDrop === true ? <Icon iconType='CaretUp'/> : <Icon iconType='CaretDown'/>}  */}
+        <Icon iconType={showDrop ? "CaretUp" : "CaretDown"}/>
+      </div>
 
       {/* Содержимое dropdown, которое показывается только если showDrop === true */}
       {
@@ -72,7 +73,7 @@ const Dropdown: FC<IDropdown> = (props) => {
                 <div
                   className={stl.drop}
                   // onClick={() => {onClick(val); setShowDrop(false)}}
-                  onClick={() => HandleClick(val)}
+                  onClick={() => handleClick(val)}
                   key={val.id}
                 >
                   {val.title}
