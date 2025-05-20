@@ -65,7 +65,8 @@ const drop: IDrop[] = [
 function App() {
 
   const [activeIndex, setActiveIndex] = useState<number>(0)
-  const [activeDrop, setActiveDrop] = useState<number>(0)
+  const [activeDrop, setActiveDrop] = useState<IDrop | undefined>()
+  
   
   const [count, setCount] = useState(0);
 
