@@ -1,0 +1,77 @@
+@use "../../../scss/mixins" as *;
+@use "../../../scss/variables" as *;
+
+.wrapper {
+  @include center;
+  flex-direction: column;
+  position: relative;
+  max-width: max-content;
+  padding: 2px 2px 0;
+
+  &_open {
+    background-color: $Cream-BG; 
+    border-radius: 14px 14px 0 0;
+  }
+}
+
+.dropbtn {
+  @include center;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  gap: 12px;
+  font-size: 14px;
+  border-radius: 14px;
+  padding: 10px 8px 10px 16px;
+  background-color: $Green; 
+  color: $Black;
+  border: none;
+}
+
+.graybtn {
+  @include center;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  gap: 12px;
+  font-size: 14px;
+  border-radius: 14px;
+  padding: 10px 8px 10px 16px;
+  background-color: $Cream-BG; 
+  color: $Gray-30;
+  border: none;
+}
+
+.graybtn:hover {
+  background-color: $Green; 
+  color: $Black;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  cursor: pointer;
+  font-size: 14px;
+  flex-grow: 1;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  background-color: $Cream-BG; 
+  padding: 0 2px 2px;
+  border-radius: 0 0 14px 14px;
+}
+
+.drop {
+  background-color: $Cream-BG; 
+  color: $Gray-30;
+  border: none;
+  border-radius: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.drop:hover {
+  background-color: $Green; 
+  color: $Black;
+}

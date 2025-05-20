@@ -1,0 +1,56 @@
+$assetSvgPath : "../";
+$assetFontPath : "../";
+$assetFontPath2 : "../";
+$assetImagesPath : "../";
+
+@font-face {
+  font-family: 'NunitoBold';
+  src: url(#{$assetFontPath}/fonts/Nunito/Nunito-Bold.ttf);
+  font-weight: 1 1000;
+}
+
+@font-face {
+  font-family: 'NunitoBlack';
+  src: url(#{$assetFontPath}/fonts/Nunito/Nunito-Black.ttf);
+  font-weight: 1 1000;
+}
+
+@font-face {
+  font-family: 'NunitoExtraBold';
+  src: url(#{$assetFontPath}/fonts/Nunito/Nunito-ExtraBold.ttf);
+  font-weight: 1 1000;
+}
+
+@font-face {
+  font-family: "Nunito-Bold";
+  src: url(#{$assetFontPath2}/fonts/Nunito/Nunito-Bold.woff2) format("woff2"),
+  url(#{$assetFontPath2}/fonts/Nunito/Nunito-Bold.woff) format("woff");
+  font-weight: 1 1000;
+}
+
+@font-face {
+  font-family: "Nunito-ExtraBold";
+  src: url(#{$assetFontPath2}/fonts/Nunito/Nunito-ExtraBold.woff2) format("woff2"),
+  url(#{$assetFontPath2}/fonts/Nunito/Nunito-ExtraBold.woff) format("woff");
+  font-weight: 1 1000;
+}
+
+@font-face {
+  font-family: "Nunito-SemiBold";
+  src: url(#{$assetFontPath2}/fonts/Nunito/Nunito-SemiBold.woff2) format("woff2"),
+  url(#{$assetFontPath2}/fonts/Nunito/Nunito-SemiBold.woff) format("woff");
+  font-weight: 1 1000;
+}
+
+@font-face {
+  font-family: 'NunitoExtraBold';
+  src: url(#{$assetFontPath}/fonts/Nunito/Nunito-ExtraBold.ttf);
+  font-weight: 1 1000;
+}
+
+@font-face {
+  font-family: 'Nunito-Regular';
+  src: url(#{$assetFontPath}/fonts/Nunito/Nunito-Regular.woff2) format("woff2"),
+  url(#{$assetFontPath}/fonts/Nunito/Nunito-Regular.woff) format("woff");
+  font-weight: 1 1000;
+}

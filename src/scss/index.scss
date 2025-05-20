@@ -1,2 +1,8 @@
 @use "../assets/fonts/icomoon/style.scss";
 @use "./colors";
+@use "./fonts";
+
+* {
+  box-sizing: border-box;
+  font-family: 'Nunito-Regular';
+}
