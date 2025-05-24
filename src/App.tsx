@@ -11,6 +11,7 @@ import Breadcrumb, { ILink } from './components/elements/Breadcrumb/Breadcrumb';
 import SegmentButton, { ISegment } from './components/elements/SegmentButton/SegmentButton';
 import ChartBarWithText from './components/elements/ChartBar/ChartBarWithText';
 import Dropdown, { IDrop } from './components/elements/Dropdown/Dropdown';
+import Text from './components/elements/Text/Text';
 
 const links: ILink[] = [
   {
@@ -116,6 +117,10 @@ function App() {
           onClick={setActiveDrop}
           activeDrop={activeDrop}
         />
+        <Text size={20}>ghbtdkbk</Text>
+        <Text font="Nunito-Bold" size={20}>ghbtdkbk</Text>
+        <Text font="Nunito-Regular" size={20}>ghbtdkbk</Text>
+        <Text font="Nunito-ExtraBold" size={20}>ghbtdkbk</Text>
 
       </div>
       <h1>Vite + React</h1>
